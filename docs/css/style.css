@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+@font-face {
+  font-family: "Genericons";
+  src: url("/portfolioV2/docs/css/fonts/genericons-regular-webfont.woff")
+      format("woff"),
+    url("/portfolioV2/docs/css/fonts/genericons-regular-webfont.eot")
+      format("truetype");
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+  background: #ccc url("/portfolioV2/docs/images/stars3.jpg") no-repeat center
+    center / cover;
+  color: #fff;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .logo {
+  font-size: 30px;
+  font-weight: 550;
+}
+
+nav .nav-bar ul {
+  display: flex;
+  list-style: none;
+  margin-top: 5px;
+}
+
+nav .nav-bar ul li a {
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+  margin-top: 30vh;
+}
+
+h1,
+h2 {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #aaa;
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+}
+
+/* Contact btn */
+/* .btn {
+  border: 2px solid #000;
+  background-color: #ccc;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 5%;
+  cursor: pointer;
+  width: 45vw;
+  margin-top: 35px;
+} */
+
+.contact {
+  margin-top: 35px;
+}
+
+.contact i {
+  margin-left: 10px;
+}
+.contact div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+  background: #eee;
+}
+
+.effect1 {
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 28px;
+  position: relative;
+  padding: 10px 50px 10px 20px;
+  font-weight: 500;
+
+  -webkit-transition: all 0.3s;
+
+  -o-transition: all 0.3s;
+
+  transition: all 0.3s;
+
+  -webkit-transform: scale(3);
+
+  -ms-transform: scale(3);
+
+  transform: scale(3); /*change scale(3) to scale(1)*/
+}
+
+.effect1 .bg {
+  background: #fff;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -1px;
+  z-index: -1;
+  border-radius: 3%;
+
+  -webkit-transition: all 0.3s;
+
+  -o-transition: all 0.3s;
+
+  transition: all 0.3s;
+}
+
+.effect1:hover {
+  padding-right: 20px;
+  color: #000;
+}
+
+.effect1:hover .bg {
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.effect1 .bg:before,
+.effect1 .bg:after {
+  content: "";
+  height: 2px;
+  width: 10px;
+  background: #fff;
+  position: absolute;
+  right: -2px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.effect1 .bg:before {
+  bottom: 3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.effect1 .bg:after {
+  top: 3px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.effect1:hover .bg:before,
+.effect1:hover .bg:after {
+  right: 0;
+}
+
+.effect1:hover .bg:before {
+  bottom: 6px;
+}
+
+.effect1:hover .bg:after {
+  top: 6px;
+}
+
+/* Social links */
+.social {
+  display: flex;
+  /* padding-left: 2rem; */
+  margin-top: 25px;
+}
+
+#social-media a {
+  padding-right: 3rem;
+}
+
+#social-media .facebook-link i {
+  color: #3b5998;
+}
+
+#social-media .facebook-link i:hover {
+  color: #fff;
+}
+
+#social-media .twitter-link i {
+  color: #33ccff;
+}
+
+#social-media .twitter-link i:hover {
+  color: #fff;
+}
+
+#social-media .instagram-link i {
+  color: #4e433c;
+}
+
+#social-media .instagram-link i:hover {
+  color: #fff;
+}
+
+#social-media .codepen-link i {
+  color: #212121;
+}
+
+#social-media .codepen-link i:hover {
+  color: #fff;
+}
+
+#social-media .linkedin-link i {
+  color: #4875b4;
+}
+
+#social-media .linkedin-link i:hover {
+  color: #fff;
+}
+
+#social-media .github-link i {
+  color: #333;
+}
+
+#social-media .github-link i:hover {
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  #social-media a {
+    padding-right: 2rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  #social-media a {
+    padding-right: 1rem;
+  }
+}
