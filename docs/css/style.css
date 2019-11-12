@@ -281,7 +281,7 @@ h2 {
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   #social-media a {
@@ -294,6 +294,10 @@ h2 {
 
   nav .nav-bar ul li a {
     font-size: 18px;
+  }
+
+  nav .nav-bar ul li a:hover {
+    font-size: 22px;
   }
 
   .effect1 {
