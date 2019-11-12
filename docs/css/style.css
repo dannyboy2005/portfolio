@@ -111,6 +111,7 @@ h2 {
   position: relative;
   padding: 10px 50px 10px 20px;
   font-weight: 500;
+  cursor: pointer;
 
   -webkit-transition: all 0.3s;
 
