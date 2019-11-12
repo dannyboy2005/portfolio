@@ -13,7 +13,7 @@ body {
   height: 100vh;
   background: #ccc url("/portfolioV2/docs/images/stars3.jpg") no-repeat center
     center / cover;
-  color: #fff;
+  color: #cb2d6f;
   overflow: hidden;
 }
 
@@ -25,6 +25,7 @@ nav {
 nav .logo {
   font-size: 30px;
   font-weight: 550;
+  color: #ccc;
 }
 
 nav .nav-bar ul {
@@ -37,7 +38,15 @@ nav .nav-bar ul li a {
   text-decoration: none;
   margin-right: 20px;
   font-size: 24px;
-  color: #fff;
+  color: #14a098;
+}
+
+nav .nav-bar ul li a:hover {
+  text-decoration: underline;
+  margin-right: 20px;
+  font-size: 24px;
+  color: #cb2d6f;
+  transition: 0.5s;
 }
 
 .container {
@@ -51,17 +60,19 @@ nav .nav-bar ul li a {
 
 h1,
 h2 {
-  font-weight: 200;
+  font-weight: 300;
   margin: 0.4rem;
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
 }
 
 h2 {
-  font-size: 2rem;
-  color: #aaa;
+  font-size: 2.2rem;
+  color: #501f3a;
+  font-weight: 600;
+  font-style: italic;
 }
 
 /* Cursor */
@@ -70,17 +81,6 @@ h2 {
 }
 
 /* Contact btn */
-/* .btn {
-  border: 2px solid #000;
-  background-color: #ccc;
-  color: #fff;
-  padding: 14px 28px;
-  font-size: 16px;
-  border-radius: 5%;
-  cursor: pointer;
-  width: 45vw;
-  margin-top: 35px;
-} */
 
 .contact {
   margin-top: 35px;
@@ -100,11 +100,11 @@ h2 {
   -ms-flex-pack: center;
   justify-content: center;
   height: 100%;
-  background: #eee;
+  background: #14a098;
 }
 
 .effect1 {
-  color: #fff;
+  color: #14a098;
   text-decoration: none;
   font-family: sans-serif;
   font-size: 28px;
@@ -126,7 +126,7 @@ h2 {
 }
 
 .effect1 .bg {
-  background: #fff;
+  background: #14a098;
   width: 30px;
   height: 2px;
   position: absolute;
@@ -161,7 +161,7 @@ h2 {
   content: "";
   height: 2px;
   width: 10px;
-  background: #fff;
+  background: #14a098;
   position: absolute;
   right: -2px;
   -webkit-transition: all 0.3s;
@@ -231,7 +231,7 @@ h2 {
 }
 
 #social-media .codepen-link i {
-  color: #212121;
+  color: #443737;
 }
 
 #social-media .codepen-link i:hover {
