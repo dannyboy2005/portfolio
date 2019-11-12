@@ -11,8 +11,7 @@
 body {
   font-family: "Raleway", sans-serif;
   height: 100vh;
-  background: url("/portfolioV2/docs/images/stars3.jpg") no-repeat center center /
-    cover;
+  background: url("stars3.jpg") no-repeat center center / cover;
   color: #cb2d6f;
   overflow: hidden;
 }
