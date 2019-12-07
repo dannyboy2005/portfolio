@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Satisfy&display=swap");
 
 @font-face {
   font-family: "Genericons";
@@ -21,10 +22,13 @@ nav {
   justify-content: space-between;
 }
 
-nav .logo {
-  font-size: 30px;
+.logo a {
+  text-decoration: none;
+  font-style: none;
+  font-size: 40px;
   font-weight: 550;
   color: #ccc;
+  font-family: "Satisfy", cursive;
 }
 
 nav .nav-bar ul {
@@ -57,6 +61,15 @@ nav .nav-bar ul li a:hover {
   margin-top: 30vh;
 }
 
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 2rem;
+  margin-top: 20vh;
+}
+
 h1,
 h2 {
   font-weight: 300;
@@ -65,6 +78,7 @@ h2 {
 
 h1 {
   font-size: 3.8rem;
+  text-shadow: 1px 1px 2px rgba(203, 45, 111, 0.7);
 }
 
 h2 {
@@ -73,6 +87,20 @@ h2 {
   font-weight: 500;
   font-style: italic;
   color: #ccc;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.intro {
+  color: #cb2d6f;
+  font-style: normal;
+  font-size: 2.8rem;
+  opacity: 0.9;
+  text-shadow: 1px 1px 1px rgba(203, 45, 111, 0.5);
 }
 
 /* Cursor */
@@ -288,7 +316,7 @@ h2 {
     padding-right: 1rem;
   }
 
-  nav .logo {
+  nav .logo a {
     font-size: 20px;
   }
 
