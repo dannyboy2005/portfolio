@@ -20,6 +20,7 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .logo a {
@@ -67,7 +68,7 @@ nav .nav-bar ul li a:hover {
   justify-content: center;
   height: 100%;
   padding: 0 2rem;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 h1,
@@ -90,7 +91,7 @@ h2 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: #ccc;
 }
@@ -283,15 +284,120 @@ p {
   color: #fff;
 }
 
-@media (min-width: 1200px) {
+/* contact page */
+.contact-container {
+  margin: 0 auto;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  height: 100%;
+  max-width: 75vw;
+  margin-top: 1rem;
+  opacity: 0.95;
+  /* background-color: red; */
+}
+
+.contact-container form label {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-container form input {
+  border: 1.5px solid #cb2d6f;
+  border-radius: 3%;
+  width: 450px;
+  height: 40px;
+  text-align: center;
+  border-radius: 3em;
+  outline: none;
+}
+
+.contact-container form textarea {
+  border: 1.5px solid #cb2d6f;
+  border-radius: 3%;
+  width: 450px;
+  border-radius: 3em;
+  outline: none;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.contact-container form button {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 70%;
+  height: 45px;
+  background: #14a098;
+  border: 1.5px solid #cb2d6f;
+  border-radius: 3em;
+  color: #ccc;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.contact-container form button:hover {
+  background: #cb2d6f;
+  border: 1.5px solid #14a098;
+  transition: 0.75s;
+}
+
+/* media queries */
+
+/* @media (max-width: 1200px) {
   h1 {
     font-size: 5rem;
   }
-}
+
+  .about-container {
+    margin-top: 2rem;
+  }
+
+  .slideshow-container {
+    margin-top: 2vh;
+  }
+
+  .text h3 {
+    font-size: 1rem;
+  }
+} */
 
 @media (max-width: 800px) {
   h1 {
     font-size: 3rem;
+  }
+
+  .slideshow-container {
+    margin-top: 5vh;
+  }
+
+  .text h3 {
+    font-size: 1rem;
+  }
+
+  .contact-container {
+    margin-top: 0.5rem;
+  }
+
+  .contact-container form label {
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+
+  .contact-container form input {
+    height: 30px;
+  }
+
+  .about-container {
+    margin-top: 2rem;
+  }
+
+  .about-container .intro {
+    font-size: 2rem;
   }
 
   #social-media a {
@@ -299,13 +405,60 @@ p {
   }
 
   .container {
+    margin-top: 20vh;
     padding: 0 1rem;
+  }
+
+  .slideshow-container {
+    margin-top: 5vh;
   }
 }
 
 @media (max-width: 500px) {
   h1 {
     font-size: 2rem;
+  }
+
+  .text h3 {
+    font-size: 1.2rem;
+  }
+  .text ul li {
+    font-size: 1.2rem;
+  }
+
+  body {
+    /* overflow: scroll; */
+  }
+
+  .slideshow-container {
+    margin-top: 5vh;
+  }
+
+  .contact-container {
+    margin-top: 0.3rem;
+  }
+
+  .contact-container form label {
+    text-align: center;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+
+  .contact-container form input {
+    height: 25px;
+  }
+
+  .about-container {
+    margin-top: 1rem;
+  }
+
+  .about-container .intro {
+    font-size: 1.8rem;
+  }
+
+  .about-container .about-me {
+    font-size: 1.2rem;
   }
 
   h2 {
