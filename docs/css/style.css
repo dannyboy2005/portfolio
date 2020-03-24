@@ -480,7 +480,7 @@ p {
   }
 
   body {
-    /* overflow: scroll; */
+    height: 80vh;
   }
 
   .slideshow-container {
